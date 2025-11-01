@@ -1,0 +1,145 @@
+
+.attendance-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f4f7, #dfe6f0);
+  padding: 20px;
+}
+
+
+.attendance-card {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 35px 30px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.attendance-card:hover {
+  transform: translateY(-3px);
+}
+
+.attendance-card h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 22px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 8px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  resize: none;
+  height: 70px;
+}
+
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .attendance-card {
+    padding: 25px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .attendance-card {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
